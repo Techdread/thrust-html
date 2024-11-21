@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrust - HTML5 Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid #333;
+        }
+        #game-container {
+            position: relative;
+        }
+        #hud {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="hud">
+            Fuel: <span id="fuelLevel">100</span>%<br>
+            Score: <span id="score">0</span>
+        </div>
+    </div>
+    <script src="js/vector.js"></script>
+    <script src="js/ship.js"></script>
+    <script src="js/terrain.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
